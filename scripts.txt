@@ -1,3 +1,6 @@
+# ---- Server Health ----
+Full server health check | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/healthcheck.sh
+
 # ---- License & Resources ----
 cPanel License & Resources check | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify.sh
 Inodes checker | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh
