@@ -5,3 +5,6 @@ bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify
 
 - Inodes checker:
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh)
+
+- Audit script:
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.sh)
