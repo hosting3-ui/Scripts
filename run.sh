@@ -9,7 +9,7 @@ CYAN="\033[0;36m"; YELLOW="\033[1;33m"; GREEN="\033[0;32m"; RED="\033[0;31m"; DI
 SCRIPTS_URL="https://raw.githubusercontent.com/hosting3-ui/Scripts/main/scripts.txt"
 
 # Fetch the scripts list
-RAW=$(curl -sf "$SCRIPTS_URL" 2>/dev/null)
+RAW=$(curl -sf "${SCRIPTS_URL}?$(date +%s)" 2>/dev/null)
 if [ -z "$RAW" ]; then
   echo -e "${RED}ERROR: Could not fetch scripts list from:${NC}"
   echo "  $SCRIPTS_URL"
@@ -102,9 +102,9 @@ while true; do
 
   echo
   if [ -n "$ARG" ]; then
-    bash <(curl -sf "$CHOSEN_URL") "$ARG"
+    bash <(curl -sf "${CHOSEN_URL}?$(date +%s)") "$ARG"
   else
-    bash <(curl -sf "$CHOSEN_URL")
+    bash <(curl -sf "${CHOSEN_URL}?$(date +%s)")
   fi
 
   echo
