@@ -1,28 +1,20 @@
-Use the following to execute on server without leaving a file:
+# ---- License & Resources ----
+cPanel License & Resources check | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify.sh
+Inodes checker | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh
 
-- cPanel License & Resources check:
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify.sh)
+# ---- Security & Audit ----
+VPS Security Audit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.sh
+IP investigate (all logs + geo) | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_investigate.sh
+OOM / Restart investigation | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/oom_investigate.sh
 
-- Inodes checker:
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh)
+# ---- WordPress ----
+WordPress toolkit (user access) | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/wp_toolkit.sh
 
-- VPS Security Audit script:
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.sh)
+# ---- cPanel / WHM ----
+cPanel toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/cpanel_toolkit.sh
 
-- Searches an IP across ALL logs — secure, maillog, exim, lfd, cPanel, Apache, messages. Also does a live ipinfo.io geo lookup and checks CSF
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_investigate.sh)
+# ---- Databases ----
+MySQL toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/mysql_toolkit.sh
 
-- Full OOM/restart investigation — dmesg, messages, kernel panics, beancounters (OpenVZ), LVE, SAR, previous boot journal
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/oom_investigate.sh)
-
-- WP-CLI Toolkit (user access)
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/wp_toolkit.sh)
-
-- Cpanel Toolkit 
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/cpanel_toolkit.sh)
-
-- Mysql Toolkit 
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/mysql_toolkit.sh)
-
-- Exim Toolkit 
-bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/exim_toolkit.sh)
+# ---- Email ----
+Exim toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/exim_toolkit.sh
