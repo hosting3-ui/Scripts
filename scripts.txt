@@ -6,5 +6,8 @@ bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify
 - Inodes checker:
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh)
 
-- Audit script:
+- VPS Security Audit script:
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.sh)
+
+- Searches an IP across ALL logs — secure, maillog, exim, lfd, cPanel, Apache, messages. Also does a live ipinfo.io geo lookup and checks CSF
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_investigate.sh)
