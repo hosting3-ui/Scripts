@@ -11,3 +11,6 @@ bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.
 
 - Searches an IP across ALL logs — secure, maillog, exim, lfd, cPanel, Apache, messages. Also does a live ipinfo.io geo lookup and checks CSF
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_investigate.sh)
+
+- Full OOM/restart investigation — dmesg, messages, kernel panics, beancounters (OpenVZ), LVE, SAR, previous boot journal
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/oom_investigate.sh)
