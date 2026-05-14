@@ -18,3 +18,6 @@ MySQL toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/mysql
 
 # ---- Email ----
 Exim toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/exim_toolkit.sh
+
+# ---- Disk & Files ----
+Disk toolkit | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/disk_toolkit.sh
