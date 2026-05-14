@@ -1,0 +1,5 @@
+Use the following to execute on server without leaving a file:
+
+- cPanel License & Resources check:
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify.sh)
+
