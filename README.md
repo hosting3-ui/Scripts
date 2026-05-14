@@ -19,6 +19,16 @@ bash <(curl -s "https://raw.githubusercontent.com/hosting3-ui/Scripts/main/run.s
 
 ## 📋 Individual Scripts
 
+### 🟥 Full Server Health Check
+
+**Full Server Health Check** *(root)*
+13-section report — identity, IPs, OS, CPU, RAM, disk, I/O, top processes, kernel errors, OOMs, panics, disk errors, failed services, network connections, SSH auth failures, UID 0 check, suspicious PHP, CSF, cPanel overview & license, Exim queue, MySQL status, CloudLinux LVE, cron abuse, and available updates.
+```bash
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/healthcheck.sh)
+```
+
+---
+
 ### 🔐 License & Resources
 
 **cPanel License & Resources check**
