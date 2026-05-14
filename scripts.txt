@@ -14,3 +14,6 @@ bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_inv
 
 - Full OOM/restart investigation — dmesg, messages, kernel panics, beancounters (OpenVZ), LVE, SAR, previous boot journal
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/oom_investigate.sh)
+
+- WP-CLI mega script (user access)
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/wp_toolkit.sh)
