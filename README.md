@@ -7,7 +7,7 @@ A collection of interactive server management scripts for cPanel/WHM, CloudLinux
 > bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/SCRIPT_NAME.sh)
 > ```
 
-***
+---
 
 ## 🚀 Script Launcher (run all from one menu)
 
@@ -15,7 +15,7 @@ A collection of interactive server management scripts for cPanel/WHM, CloudLinux
 bash <(curl -s "https://raw.githubusercontent.com/hosting3-ui/Scripts/main/run.sh?$(date +%s)")
 ```
 
-***
+---
 
 ## 📋 Individual Scripts
 
@@ -27,7 +27,7 @@ Displays server stats, cPanel version, account count, and license status.
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/verify.sh)
 ```
 
-***
+---
 
 **Inodes checker**
 Shows inode usage per filesystem and top directories consuming inodes.
@@ -35,7 +35,7 @@ Shows inode usage per filesystem and top directories consuming inodes.
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/inodes.sh)
 ```
 
-***
+---
 
 ### 🔒 Security & Audit
 
@@ -45,7 +45,7 @@ Checks logins, failed auth, crontabs, authorized_keys, suspicious bashrc entries
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/audit.sh)
 ```
 
-***
+---
 
 **IP Investigate**
 Searches an IP across all major logs — secure, maillog, exim, lfd, cPanel, Apache, messages. Includes live geo lookup and CSF status.
@@ -53,7 +53,7 @@ Searches an IP across all major logs — secure, maillog, exim, lfd, cPanel, Apa
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/ip_investigate.sh) 1.2.3.4
 ```
 
-***
+---
 
 **OOM / Restart Investigation**
 Full investigation — dmesg, kernel panics, beancounters (OpenVZ), LVE, SAR, previous boot journal, top memory processes.
@@ -61,7 +61,7 @@ Full investigation — dmesg, kernel panics, beancounters (OpenVZ), LVE, SAR, pr
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/oom_investigate.sh)
 ```
 
-***
+---
 
 ### 🌐 WordPress
 
@@ -72,7 +72,7 @@ bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/wp_too
 ```
 > Run from inside the WordPress directory.
 
-***
+---
 
 ### ⚙️ cPanel / WHM
 
@@ -82,7 +82,7 @@ Interactive menu — find domain owner, list accounts, suspend/unsuspend, accoun
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/cpanel_toolkit.sh)
 ```
 
-***
+---
 
 ### 🗄️ Databases
 
@@ -92,7 +92,7 @@ Interactive menu — processlist, kill queries, DB sizes, dump/import/drop/creat
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/mysql_toolkit.sh)
 ```
 
-***
+---
 
 ### 📧 Email
 
@@ -101,3 +101,24 @@ Interactive menu — view/delete queue by sender/recipient/ID, frozen messages, 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/exim_toolkit.sh)
 ```
+
+---
+
+### 💾 Disk & Files
+
+**Disk Toolkit** *(root recommended)*
+Interactive menu — disk/inode overview, largest dirs/files, files over X MB, large error logs, per-account disk and inode usage, old backup cleanup, truncate large error logs, clear WP cache dirs, PHP session cleanup, remove uncompressed SQL dumps, recently modified files, world-writable files.
+```bash
+bash <(curl -s https://raw.githubusercontent.com/hosting3-ui/Scripts/main/disk_toolkit.sh)
+```
+
+---
+
+## 📝 Adding a New Script
+
+1. Add your `.sh` file to this repo
+2. Append a line to `scripts.txt`:
+   ```
+   Short label | https://raw.githubusercontent.com/hosting3-ui/Scripts/main/your_script.sh
+   ```
+3. The launcher picks it up automatically — no changes to `run.sh` needed.
